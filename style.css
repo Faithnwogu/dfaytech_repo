@@ -1,0 +1,172 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace,sans-serif,arial;
+    text-decoration: none;
+    list-style: none;
+    /* font-size: 100%; */
+   
+}
+
+body{
+    /* font-size: 1.2rem; */
+}
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: black;
+    font-size: 1.1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+   
+   
+}
+
+.logo a{
+    color: pink;
+    font-weight: bolder;
+    
+}
+
+nav li{
+     display: inline;
+     padding: .5rem;
+}
+
+
+nav li a{
+    color: pink;
+  
+}
+
+nav a:hover{
+        border: 1px solid pink;
+        padding: .5rem;
+        border-radius: 30px;
+
+}
+.active{
+    border: 1px solid pink;
+    padding: .5rem;
+    border-radius: 30px;
+}
+
+
+/* HERO SECTION */
+#hero{
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-cont{
+    position:relative;
+    top:12rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.hero-cont a{
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: .5rem;
+    font-size: 1.1rem;
+
+}
+
+.hero-cont a:hover{
+    
+       background-color: pink;
+       color: black;
+
+}
+
+/* about */
+#about{
+    height: 100vh;
+ 
+}
+
+.about-cont{
+        text-align: center;
+       position: relative;
+       top: 5rem;
+       font-size: 1.2rem;
+       line-height: 1.5;
+}
+
+.about-content{
+         display: flex;
+         position: relative;
+         top: 3rem;
+         align-items: center;
+         justify-content: space-evenly;
+
+}
+
+.about-txt{
+    text-align: start;
+    width: 350px;
+}
+
+
+.about-txt a{
+     border: 1px solid black;
+     border-radius: 30px;
+     padding: .2rem;
+     color: black;
+     background-color: black;
+     color: white;
+
+}
+
+.about-txt a:hover{
+  
+    background-color: pink;
+    color: black;
+
+}
+
+
+
+
+
+ 
+
+ 
+/* media query */
+@media screen and (max-width: 680px){
+     header{
+        flex-direction: column;
+        padding: .2rem;
+     }
+
+     nav li a{
+        display: none;
+      
+    }
+
+    .logo {
+        margin-top:10px;
+        
+    }
+    
+   
+
+
+
+
+}
